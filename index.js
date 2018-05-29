@@ -47,7 +47,7 @@ function generateCartItem(itemName) {
   return {
     itemName:itemName,
     itemPrice:getRandomInt(1, 100)
-  }
+  };
 }
 
 function generateCartDescription() {
