@@ -25,7 +25,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  var itemToRemove = searchCartForItemToRemove(itemName);
+  return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove();
 }
 
 function placeOrder(cardNumber) {
