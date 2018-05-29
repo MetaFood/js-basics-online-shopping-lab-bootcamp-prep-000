@@ -24,7 +24,7 @@ function total() {
   return sum;
 }
 
-function removeFromCart(item) {
+function removeFromCart(itemname) {
   var itemToRemove = searchCartForItemToRemove(itemName);
   return itemToRemove ? removeItemFromCart(itemToRemove) : notifyUserThereIsNoItemToRemove();
 }
